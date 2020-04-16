@@ -1,6 +1,6 @@
 ## Use Tomcat9 OpenJDK 11 image
 FROM tomcat:9.0-jdk11-openjdk AS pres
-LABEL maintainer="jaddap2@nih.gov"
+LABEL maintainer="jaddap2"
 
 ### These Arguments Can be overriden during build
 ARG PORT=8080
