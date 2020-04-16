@@ -3,9 +3,9 @@ pipeline
     agent any
     environment {
         //Use Nexus registry
-        registry = "https://oitrepo.ccr.cancer.gov/pres2/springboot"
+        registry = "https://********/springboot"
         imageTag="pres2/springboot"
-        registryCredential = "jaddap2_nexus"
+        registryCredential = "******"
     }
  tools
    {
@@ -14,7 +14,7 @@ pipeline
 
      parameters
      {
-        string(name: 'DEV_HOSTNAME', defaultValue: 'fsccrl-pres02d.ncifcrf.gov', description: 'PRES Dev Server')
+        string(name: 'DEV_HOSTNAME', defaultValue: 'server.com', description: 'PRES Dev Server')
         string(name: 'USERNAME', defaultValue: 'jaddap2', description: 'USERNAME')
       }
 
